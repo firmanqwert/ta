@@ -19,17 +19,28 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
+<<<<<<< HEAD
+ * @author Led Zepplin
+=======
  * @author snobi
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
  */
 public class frm_menu extends javax.swing.JFrame {
 
     /**
      * Creates new
      */
+<<<<<<< HEAD
+    JasperReport JasRep;
+    JasperPrint JasPri;
+    Map param=new HashMap();
+    JasperDesign JasDes;
+=======
      JasperReport JasRep;
              JasperPrint JasPri;
             Map param=new HashMap();
             JasperDesign JasDes;
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
     
     public frm_menu() {
         initComponents();
@@ -177,6 +188,28 @@ public class frm_menu extends javax.swing.JFrame {
 //             JasperPrint jasPri;
 //             Map<String, Object> no=new HashMap<String, Object>();
 //             JasperDesign jasDes;
+<<<<<<< HEAD
+        
+        java.io.File namaFile=new java.io.File("./report1.jasper");
+                    try{
+        Connection c = koneksi.getkoneksi();
+        Statement t = c.createStatement();
+        
+//        File report=new File("report1.jrxml");
+//        JasDes =JRXmlLoader.load(report);
+//        param.clear();
+//        
+//        JasRep=JasperCompileManager.compileReport(JasDes);
+//        JasPri=JasperFillManager.fillReport(JasRep,param,c);
+//        JasperViewer.viewReport(JasPri,false);
+        
+        net.sf.jasperreports.engine.JasperReport jasper;
+            jasper=(net.sf.jasperreports.engine.JasperReport)
+                    net.sf.jasperreports.engine.util.JRLoader.loadObject(namaFile.getPath());
+            net.sf.jasperreports.engine.JasperPrint jp;
+            jp=net.sf.jasperreports.engine.JasperFillManager.fillReport(jasper, null,c);
+            net.sf.jasperreports.view.JasperViewer.viewReport(jp,false);
+=======
                     try{
             Connection c = koneksi.getkoneksi();
         Statement t = c.createStatement();
@@ -188,6 +221,7 @@ public class frm_menu extends javax.swing.JFrame {
         JasRep=JasperCompileManager.compileReport(JasDes);
         JasPri=JasperFillManager.fillReport(JasRep,param,c);
         JasperViewer.viewReport(JasPri,false);
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
         
         
 //                 net.sf.jasperreports.engine.JasperReport JasRep = JasperCompileManager.compileReport(jasDes);

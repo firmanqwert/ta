@@ -10,7 +10,11 @@ import org.junit.Test;
 
 /**
  *
+<<<<<<< HEAD
+ * @author Led Zepplin
+=======
  * @author evilryu
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
  */
 
 public class frm_login extends javax.swing.JFrame {

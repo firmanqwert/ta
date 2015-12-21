@@ -10,14 +10,34 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import java.awt.Color;
+<<<<<<< HEAD
+import java.io.File;
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+<<<<<<< HEAD
+import java.util.HashMap;
+import java.util.Map;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.view.JasperViewer;
+
+/**
+ *
+ * @author Led Zepplin
+=======
 
 /**
  *
  * @author snobi
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
  */
 public class frm_peminjaman extends javax.swing.JFrame {
 
@@ -25,6 +45,13 @@ public class frm_peminjaman extends javax.swing.JFrame {
     SimpleDateFormat tf = new SimpleDateFormat("yyyy-MM-dd"); 
     String tanggal1;
     String tanggal2;
+<<<<<<< HEAD
+     JasperReport JasRep;
+    JasperPrint JasPri;
+    Map param=new HashMap();
+    JasperDesign JasDes;
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
     
 
     private void autonumb(){
@@ -100,7 +127,11 @@ public class frm_peminjaman extends javax.swing.JFrame {
         
         tgl1.setDate(new java.util.Date());
         tgl1.setDateFormatString("yyyy-MM-dd");
+<<<<<<< HEAD
+        tgl2.setDateFormatString("yyyy-MM-dd");   
+=======
  
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
         model = new DefaultTableModel();
 //        tbBuku.setShowGrid(true);
 //	tbBuku.setShowVerticalLines(true);
@@ -162,6 +193,10 @@ public class frm_peminjaman extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         tgl2 = new com.toedter.calendar.JDateChooser();
         tgl1 = new com.toedter.calendar.JDateChooser();
+<<<<<<< HEAD
+        jButton2 = new javax.swing.JButton();
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -245,11 +280,23 @@ public class frm_peminjaman extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+        jButton2.setText("Cetak");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+=======
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(117, 117, 117)
@@ -267,6 +314,7 @@ public class frm_peminjaman extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(21, 21, 21))
             .addGroup(layout.createSequentialGroup()
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -278,6 +326,46 @@ public class frm_peminjaman extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cmbPeminjam, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
+                            .addComponent(txtNopin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPeminjam, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel6))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tgl1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtJudul)
+                            .addComponent(tgl2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cmbBuku, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(26, 26, 26)
+                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(168, 168, 168))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel7)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(24, 24, 24))
+=======
                             .addComponent(txtPeminjam, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtNopin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
@@ -300,6 +388,7 @@ public class frm_peminjaman extends javax.swing.JFrame {
                                 .addComponent(cmbBuku, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 99, Short.MAX_VALUE)))
                 .addGap(53, 53, 53))
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -311,6 +400,19 @@ public class frm_peminjaman extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14)
+<<<<<<< HEAD
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtNopin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(cmbPeminjam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtPeminjam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -333,6 +435,7 @@ public class frm_peminjaman extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addGap(4, 4, 4)
                         .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel8)
@@ -343,12 +446,34 @@ public class frm_peminjaman extends javax.swing.JFrame {
                     .addComponent(jLabel9))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                        .addGap(0, 21, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(cmbBuku, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel6)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+=======
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
         );
 
         pack();
@@ -461,6 +586,55 @@ public class frm_peminjaman extends javax.swing.JFrame {
         tanggal2=format.format(tgl2.getDate());}
     }//GEN-LAST:event_tgl2PropertyChange
 
+<<<<<<< HEAD
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+                
+        //        frm_laporan f=new frm_laporan();
+//                f.show();
+//                this.dispose();
+//        JasperReport jasRep;
+//             JasperPrint jasPri;
+//             Map<String, Object> no=new HashMap<String, Object>();
+//             JasperDesign jasDes;
+        
+        java.io.File namaFile=new java.io.File("report1.jrxml");
+                    try{
+        Connection c = koneksi.getkoneksi();
+        Statement t = c.createStatement();
+        
+        File report=new File("report1.jrxml");
+        JasDes =JRXmlLoader.load(report);
+        param.clear();
+        
+        JasRep=JasperCompileManager.compileReport(JasDes);
+        JasPri=JasperFillManager.fillReport(JasRep,param,c);
+        JasperViewer.viewReport(JasPri,false);
+        
+//        net.sf.jasperreports.engine.JasperReport jasper;
+//            jasper=(net.sf.jasperreports.engine.JasperReport)
+//                    net.sf.jasperreports.engine.util.JRLoader.loadObject(namaFile.getPath());
+//            net.sf.jasperreports.engine.JasperPrint jp;
+//            jp=net.sf.jasperreports.engine.JasperFillManager.fillReport(jasper, null,c);
+//            net.sf.jasperreports.view.JasperViewer.viewReport(jp,false);
+        
+        
+//                 net.sf.jasperreports.engine.JasperReport JasRep = JasperCompileManager.compileReport(jasDes);
+//                 jasPri=JasperFillManager.fillReport(jasRep,no,c);
+//                 JasperViewer.viewReport(jasPri,false);
+//        
+//        
+////        JasperReport jasperReport=(JasperReport)JRLoader.loadObject(report_file.getPath());
+////        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null,c);
+////        
+////        JasperViewer.viewReport(jasperPrint,false);        
+        }catch(Exception e){
+        e.printStackTrace();
+    }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
     /**
      * @param args the command line arguments
      */
@@ -503,6 +677,10 @@ public class frm_peminjaman extends javax.swing.JFrame {
     private javax.swing.JComboBox cmbBuku;
     private javax.swing.JComboBox cmbPeminjam;
     private javax.swing.JButton jButton1;
+<<<<<<< HEAD
+    private javax.swing.JButton jButton2;
+=======
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

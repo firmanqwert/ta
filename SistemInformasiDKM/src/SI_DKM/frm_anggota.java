@@ -16,7 +16,11 @@ import java.text.SimpleDateFormat;
 
 /**
  *
+<<<<<<< HEAD
+ * @author Led Zepplin
+=======
  * @author snobi
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
  */
 public class frm_anggota extends javax.swing.JFrame {
      private DefaultTableModel model;
