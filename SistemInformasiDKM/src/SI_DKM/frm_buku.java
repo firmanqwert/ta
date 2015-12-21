@@ -14,7 +14,11 @@ import junit.framework.TestCase;
 
 /**
  *
+<<<<<<< HEAD
  * @author Led Zepplin
+=======
+ * @author snobi
+>>>>>>> 3b8188fa2ec34ef6680170599139a74243e49f23
  */
 
 
